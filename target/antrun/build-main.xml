@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>*******************************************************************</echo>
+  <echo>*******************************************************************</echo>
+  <echo>[project.name] : jasperserver-simple-java-rest-client</echo>
+  <echo>[project.basedir] : /Users/rochester/Desktop/jasperserver-simple-java-rest-client-master</echo>
+  <echo>[project.version] : 1.0-SNAPSHOT</echo>
+  <echo>[project.artifactId] jasperserver-simple-java-rest-client</echo>
+  <echo>[project.build.directory] /Users/rochester/Desktop/jasperserver-simple-java-rest-client-master/target</echo>
+  <echo>[jdk.source] : 1.6</echo>
+  <echo>[jdk.target] : 1.6</echo>
+  <echo>[jdk.debug] : true</echo>
+  <echo>[jdk.optimize] : false</echo>
+  <echo>[source encoding]: UTF-8</echo>
+  <echo>[COMPUTERNAME] : ${env.COMPUTERNAME}</echo>
+  <echo>[M2_HOME] : ${env.M2_HOME}</echo>
+  <echo>[LocalRepository] : ${settings.localRepository}</echo>
+  <echo>*******************************************************************</echo>
+  <echo>*******************************************************************</echo>
+</target>
+</project>

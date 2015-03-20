@@ -1,0 +1,565 @@
+[client]2015-03-20 09:56:43,146 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClientTest].beforeTest(35) | beforeTest...
+[client]2015-03-20 09:56:43,150 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClientTest].beforeTest(37) | --> File location: /var/folders/nh/s4ydhx1s74n3rrc5gfrr2l6w0000gn/T
+[client]2015-03-20 09:56:43,153 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClientTest].testGetReportAsFile(52) | testGetReportAsFile
+[client]2015-03-20 09:56:43,182 INFO [main] [com.gkudos.jasperserver.client.JasperserverRestClientTest].testGetReportAsFile(58) | com.gkudos.jasperserver.client.Report@42704baa[
+  url=/aprendozreports/EXT001
+  params={}
+  format=PDF
+  outputFolder=/var/folders/nh/s4ydhx1s74n3rrc5gfrr2l6w0000gn/T
+]
+[client]2015-03-20 09:56:43,195 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(85) | getReportAsFile
+[client]2015-03-20 09:56:43,259 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(72) | Java version: 1.6.0_65
+[client]2015-03-20 09:56:43,260 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(73) | Java vendor: Apple Inc.
+[client]2015-03-20 09:56:43,260 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(74) | Java class path: /Users/rochester/Desktop/jasperserver-simple-java-rest-client-master/target/test-classes:/Users/rochester/Desktop/jasperserver-simple-java-rest-client-master/target/classes:/Users/rochester/.m2/repository/com/sun/jersey/jersey-client/1.12/jersey-client-1.12.jar:/Users/rochester/.m2/repository/com/sun/jersey/jersey-core/1.12/jersey-core-1.12.jar:/Users/rochester/.m2/repository/com/sun/jersey/contribs/jersey-apache-client/1.12/jersey-apache-client-1.12.jar:/Users/rochester/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/rochester/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/rochester/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar:/Users/rochester/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/rochester/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2.jar:/Users/rochester/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/rochester/.m2/repository/xom/xom/1.2.5/xom-1.2.5.jar:/Users/rochester/.m2/repository/xml-apis/xml-apis/1.3.03/xml-apis-1.3.03.jar:/Users/rochester/.m2/repository/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar:/Users/rochester/.m2/repository/xalan/xalan/2.7.0/xalan-2.7.0.jar:/Users/rochester/.m2/repository/jaxen/jaxen/1.1.3/jaxen-1.1.3.jar:/Users/rochester/.m2/repository/jdom/jdom/1.0/jdom-1.0.jar:/Users/rochester/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/rochester/.m2/repository/org/testng/testng/5.12.1/testng-5.12.1.jar:/Users/rochester/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/rochester/.m2/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/rochester/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar
+[client]2015-03-20 09:56:43,261 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(75) | Operating system name: Mac OS X
+[client]2015-03-20 09:56:43,261 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(76) | Operating system architecture: x86_64
+[client]2015-03-20 09:56:43,261 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(77) | Operating system version: 10.8.4
+[client]2015-03-20 09:56:43,323 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | SUN 1.6: SUN (DSA key/parameter generation; DSA signing; SHA-1, MD5 digests; SecureRandom; X.509 certificates; JKS keystore; PKIX CertPathValidator; PKIX CertPathBuilder; LDAP, Collection CertStores, JavaPolicy Policy; JavaLoginConfig Configuration)
+[client]2015-03-20 09:56:43,327 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | Apple 1.0: Apple Provider (implements DES, Triple DES, AES, Blowfish, PBE, Diffie-Hellman, HMAC/MD5, HMAC/SHA1)
+[client]2015-03-20 09:56:43,327 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | SunRsaSign 1.5: Sun RSA signature provider
+[client]2015-03-20 09:56:43,327 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | SunJSSE 1.6: Sun JSSE provider(PKCS12, SunX509 key/trust factories, SSLv3, TLSv1)
+[client]2015-03-20 09:56:43,328 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | SunJCE 1.6: SunJCE Provider (implements RSA, DES, Triple DES, AES, Blowfish, ARCFOUR, RC2, PBE, Diffie-Hellman, HMAC)
+[client]2015-03-20 09:56:43,331 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | SunJGSS 1.0: Sun (Kerberos v5, SPNEGO)
+[client]2015-03-20 09:56:43,331 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | SunSASL 1.5: Sun SASL provider(implements client mechanisms for: DIGEST-MD5, GSSAPI, EXTERNAL, PLAIN, CRAM-MD5; server mechanisms for: DIGEST-MD5, GSSAPI, CRAM-MD5)
+[client]2015-03-20 09:56:43,331 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | XMLDSig 1.0: XMLDSig (DOM XMLSignatureFactory; DOM KeyInfoFactory)
+[client]2015-03-20 09:56:43,332 DEBUG [main] [org.apache.commons.httpclient.HttpClient].<clinit>(82) | SunPCSC 1.6: Sun PC/SC provider
+[client]2015-03-20 09:56:43,348 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.useragent = Jakarta Commons-HttpClient/3.1
+[client]2015-03-20 09:56:43,349 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.protocol.version = HTTP/1.1
+[client]2015-03-20 09:56:43,365 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.connection-manager.class = class org.apache.commons.httpclient.SimpleHttpConnectionManager
+[client]2015-03-20 09:56:43,365 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.protocol.cookie-policy = default
+[client]2015-03-20 09:56:43,366 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.protocol.element-charset = US-ASCII
+[client]2015-03-20 09:56:43,366 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.protocol.content-charset = ISO-8859-1
+[client]2015-03-20 09:56:43,367 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.method.retry-handler = org.apache.commons.httpclient.DefaultHttpMethodRetryHandler@79a5f739
+[client]2015-03-20 09:56:43,368 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.dateparser.patterns = [EEE, dd MMM yyyy HH:mm:ss zzz, EEEE, dd-MMM-yy HH:mm:ss zzz, EEE MMM d HH:mm:ss yyyy, EEE, dd-MMM-yyyy HH:mm:ss z, EEE, dd-MMM-yyyy HH-mm-ss z, EEE, dd MMM yy HH:mm:ss z, EEE dd-MMM-yyyy HH:mm:ss z, EEE dd MMM yyyy HH:mm:ss z, EEE dd-MMM-yyyy HH-mm-ss z, EEE dd-MMM-yy HH:mm:ss z, EEE dd MMM yy HH:mm:ss z, EEE,dd-MMM-yy HH:mm:ss z, EEE,dd-MMM-yyyy HH:mm:ss z, EEE, dd-MM-yyyy HH:mm:ss z]
+[client]2015-03-20 09:56:43,389 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.authentication.preemptive = false
+[client]2015-03-20 09:56:43,773 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(102) | Obtener Recurso...
+[client]2015-03-20 09:56:43,837 DEBUG [main] [org.apache.commons.httpclient.methods.GetMethod].<init>(90) | enter GetMethod(String)
+[client]2015-03-20 09:56:43,837 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.authentication.credential-provider = null
+[client]2015-03-20 09:56:43,841 DEBUG [main] [org.apache.commons.httpclient.HttpClient].executeMethod(374) | enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+[client]2015-03-20 09:56:43,846 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(405) | enter HttpConnectionManager.getConnectionWithTimeout(HostConfiguration, long)
+[client]2015-03-20 09:56:43,847 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(412) | HttpConnectionManager.getConnection:  config = HostConfiguration[host=http://leon:8090], timeout = 0
+[client]2015-03-20 09:56:43,847 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:43,848 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:43,848 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].createConnection(760) | Allocating new connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:43,851 DEBUG [main] [org.apache.commons.httpclient.HttpMethodDirector].executeWithRetry(379) | Attempt number 1 to process request
+[client]2015-03-20 09:56:43,851 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].open(685) | enter HttpConnection.open()
+[client]2015-03-20 09:56:43,851 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].open(692) | Open connection to leon:8090
+[client]2015-03-20 09:56:43,872 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].execute(1079) | enter HttpMethodBase.execute(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,872 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequest(2057) | enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,872 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestLine(2212) | enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,872 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].generateRequestLine(1496) | enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+[client]2015-03-20 09:56:43,873 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:43,873 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:43,874 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:43,874 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestHeaders(2175) | enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:43,874 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addRequestHeaders(1417) | enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,874 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addUserAgentRequestHeader(1442) | enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,874 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1328) | enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,874 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1352) | Adding Host request header
+[client]2015-03-20 09:56:43,875 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addCookieRequestHeader(1266) | enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,896 DEBUG [main] [org.apache.commons.httpclient.HttpState].getCookies(173) | enter HttpState.getCookies()
+[client]2015-03-20 09:56:43,897 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].match(549) | enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+[client]2015-03-20 09:56:43,897 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addProxyConnectionHeader(1379) | enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,897 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:43,898 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:43,898 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:43,899 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:43,900 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:43,900 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:43,901 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:43,901 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:43,901 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:43,901 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].writeLine(1001) | enter HttpConnection.writeLine()
+[client]2015-03-20 09:56:43,901 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:43,901 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:43,902 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].flushRequestOutputStream(826) | enter HttpConnection.flushRequestOutputStream()
+[client]2015-03-20 09:56:43,902 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponse(1730) | enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,903 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readStatusLine(1964) | enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:43,903 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].readLine(1113) | enter HttpConnection.readLine()
+[client]2015-03-20 09:56:43,910 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:43,911 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,105 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseHeaders(1930) | enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:44,106 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:44,106 DEBUG [main] [org.apache.commons.httpclient.HttpParser].parseHeaders(170) | enter HeaderParser.parseHeaders(InputStream, String)
+[client]2015-03-20 09:56:44,106 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,106 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,106 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,107 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,107 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,107 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,107 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,107 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,108 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,108 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,108 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,108 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,108 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,108 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,108 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,108 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,109 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,109 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,109 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,109 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:44,109 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processResponseHeaders(1579) | enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,110 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processCookieHeaders(1615) | enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,110 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].parse(243) | enter CookieSpecBase.parse(String, port, path, boolean, String)
+[client]2015-03-20 09:56:44,110 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].parse(113) | enter CookieSpecBase.parse(String, port, path, boolean, Header)
+[client]2015-03-20 09:56:44,111 DEBUG [main] [org.apache.commons.httpclient.HeaderElement].parseElements(194) | enter HeaderElement.parseElements(char[])
+[client]2015-03-20 09:56:44,112 DEBUG [main] [org.apache.commons.httpclient.Cookie].<init>(107) | enter Cookie(String, String, String, String, Date, boolean)
+[client]2015-03-20 09:56:44,112 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].validate(137) | enter RFC2109Spec.validate(String, int, String, boolean, Cookie)
+[client]2015-03-20 09:56:44,113 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].validate(369) | enter CookieSpecBase.validate(String, port, path, boolean, Cookie)
+[client]2015-03-20 09:56:44,113 DEBUG [main] [org.apache.commons.httpclient.HttpState].addCookie(125) | enter HttpState.addCookie(Cookie)
+[client]2015-03-20 09:56:44,113 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].formatCookie(250) | enter RFC2109Spec.formatCookie(Cookie)
+[client]2015-03-20 09:56:44,113 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processCookieHeaders(1651) | Cookie accepted: "$Version=0; JSESSIONID=CF2D3E0A1B0FAAE0223D90BF02073A2E; $Path=/jasperserver"
+[client]2015-03-20 09:56:44,113 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1781) | enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,113 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1816) | enter HttpMethodBase.readResponseBody(HttpConnection)
+[client]2015-03-20 09:56:44,113 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:44,113 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].canResponseHaveBody(2281) | enter HttpMethodBase.canResponseHaveBody(int)
+[client]2015-03-20 09:56:44,117 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1024) | Resorting to protocol version default close connection policy
+[client]2015-03-20 09:56:44,117 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1028) | Should NOT close connection, using HTTP/1.1
+[client]2015-03-20 09:56:44,117 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].isResponseAvailable(874) | enter HttpConnection.isResponseAvailable()
+[client]2015-03-20 09:56:44,117 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1174) | enter HttpConnection.releaseConnection()
+[client]2015-03-20 09:56:44,117 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1178) | Releasing connection back to connection manager.
+[client]2015-03-20 09:56:44,118 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].releaseConnection(630) | enter HttpConnectionManager.releaseConnection(HttpConnection)
+[client]2015-03-20 09:56:44,118 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].freeConnection(979) | Freeing connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:44,118 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:44,118 DEBUG [main] [org.apache.commons.httpclient.util.IdleConnectionHandler].add(76) | Adding connection at: 1426863404118
+[client]2015-03-20 09:56:44,118 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].notifyWaitingThread(961) | Notifying no-one, there are no waiting threads
+[client]2015-03-20 09:56:44,319 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(119) | Generar Reporte...
+[client]2015-03-20 09:56:44,329 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.authentication.credential-provider = null
+[client]2015-03-20 09:56:44,331 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].clearRequestBody(150) | enter EntityEnclosingMethod.clearRequestBody()
+[client]2015-03-20 09:56:44,331 DEBUG [main] [org.apache.commons.httpclient.HttpClient].executeMethod(374) | enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+[client]2015-03-20 09:56:44,331 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(405) | enter HttpConnectionManager.getConnectionWithTimeout(HostConfiguration, long)
+[client]2015-03-20 09:56:44,331 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(412) | HttpConnectionManager.getConnection:  config = HostConfiguration[host=http://leon:8090], timeout = 0
+[client]2015-03-20 09:56:44,331 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:44,331 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:44,331 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getFreeConnection(839) | Getting free connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:44,332 DEBUG [main] [org.apache.commons.httpclient.HttpMethodDirector].executeWithRetry(379) | Attempt number 1 to process request
+[client]2015-03-20 09:56:44,334 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].execute(1079) | enter HttpMethodBase.execute(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,334 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequest(2057) | enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,334 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestLine(2212) | enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,334 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].generateRequestLine(1496) | enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+[client]2015-03-20 09:56:44,334 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:44,334 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:44,335 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:44,335 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestHeaders(2175) | enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:44,335 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].addRequestHeaders(370) | enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,335 DEBUG [main] [org.apache.commons.httpclient.methods.ExpectContinueMethod].addRequestHeaders(183) | enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,335 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addRequestHeaders(1417) | enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,335 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addUserAgentRequestHeader(1442) | enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,335 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1328) | enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,335 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1352) | Adding Host request header
+[client]2015-03-20 09:56:44,336 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addCookieRequestHeader(1266) | enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,336 DEBUG [main] [org.apache.commons.httpclient.HttpState].getCookies(173) | enter HttpState.getCookies()
+[client]2015-03-20 09:56:44,336 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].match(549) | enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+[client]2015-03-20 09:56:44,336 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].match(453) | enter CookieSpecBase.match(String, int, String, boolean, Cookie
+[client]2015-03-20 09:56:44,336 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].formatCookie(250) | enter RFC2109Spec.formatCookie(Cookie)
+[client]2015-03-20 09:56:44,336 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addProxyConnectionHeader(1379) | enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,336 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].addContentLengthRequestHeader(401) | enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,336 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].getRequestContentLength(325) | enter EntityEnclosingMethod.getRequestContentLength()
+[client]2015-03-20 09:56:44,337 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].hasRequestContent(135) | enter EntityEnclosingMethod.hasRequestContent()
+[client]2015-03-20 09:56:44,337 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addRequestHeader(386) | HttpMethodBase.addRequestHeader(Header)
+[client]2015-03-20 09:56:44,337 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:44,337 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:44,337 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:44,337 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:44,337 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:44,338 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:44,338 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:44,338 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:44,338 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:44,338 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:44,338 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:44,338 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:44,338 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].writeLine(1001) | enter HttpConnection.writeLine()
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:44,339 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].writeRequestBody(469) | enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,340 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].hasRequestContent(135) | enter EntityEnclosingMethod.hasRequestContent()
+[client]2015-03-20 09:56:44,340 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].getRequestContentLength(325) | enter EntityEnclosingMethod.getRequestContentLength()
+[client]2015-03-20 09:56:44,340 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].hasRequestContent(135) | enter EntityEnclosingMethod.hasRequestContent()
+[client]2015-03-20 09:56:44,340 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getRequestOutputStream(840) | enter HttpConnection.getRequestOutputStream()
+[client]2015-03-20 09:56:44,340 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].writeRequestBody(508) | Request body sent
+[client]2015-03-20 09:56:44,340 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].flushRequestOutputStream(826) | enter HttpConnection.flushRequestOutputStream()
+[client]2015-03-20 09:56:44,340 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponse(1730) | enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,341 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readStatusLine(1964) | enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:44,341 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].readLine(1113) | enter HttpConnection.readLine()
+[client]2015-03-20 09:56:44,341 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:44,341 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,354 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseHeaders(1930) | enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:45,355 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:45,355 DEBUG [main] [org.apache.commons.httpclient.HttpParser].parseHeaders(170) | enter HeaderParser.parseHeaders(InputStream, String)
+[client]2015-03-20 09:56:45,355 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,355 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,355 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,355 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,356 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,356 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,356 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,356 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,356 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,356 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,356 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,357 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,357 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,357 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,357 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,357 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,357 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,357 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,358 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processResponseHeaders(1579) | enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,358 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processCookieHeaders(1615) | enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,358 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1781) | enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,358 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1816) | enter HttpMethodBase.readResponseBody(HttpConnection)
+[client]2015-03-20 09:56:45,358 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:45,358 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].canResponseHaveBody(2281) | enter HttpMethodBase.canResponseHaveBody(int)
+[client]2015-03-20 09:56:45,359 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1024) | Resorting to protocol version default close connection policy
+[client]2015-03-20 09:56:45,359 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1028) | Should NOT close connection, using HTTP/1.1
+[client]2015-03-20 09:56:45,359 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].isResponseAvailable(874) | enter HttpConnection.isResponseAvailable()
+[client]2015-03-20 09:56:45,360 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1174) | enter HttpConnection.releaseConnection()
+[client]2015-03-20 09:56:45,360 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1178) | Releasing connection back to connection manager.
+[client]2015-03-20 09:56:45,360 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].releaseConnection(630) | enter HttpConnectionManager.releaseConnection(HttpConnection)
+[client]2015-03-20 09:56:45,361 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].freeConnection(979) | Freeing connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:45,361 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:45,361 DEBUG [main] [org.apache.commons.httpclient.util.IdleConnectionHandler].add(76) | Adding connection at: 1426863405361
+[client]2015-03-20 09:56:45,361 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].notifyWaitingThread(961) | Notifying no-one, there are no waiting threads
+[client]2015-03-20 09:56:45,361 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(127) | Obtener archivo...
+[client]2015-03-20 09:56:45,361 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].parseReport(167) | reportResponse:
+<report>
+	<uuid>81d8007c-7c16-42e3-87e7-47b3ec67058c</uuid>
+	<originalUri>/aprendozreports/EXT001</originalUri>
+	<totalPages>14</totalPages>
+	<startPage>1</startPage>
+	<endPage>14</endPage>
+	<file type="application/pdf"><![CDATA[report]]></file>
+	<file type="text/xml"><![CDATA[attachment]]></file>
+</report>
+[client]2015-03-20 09:56:45,415 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(133) | Inicia escritura de archivo...
+[client]2015-03-20 09:56:45,416 DEBUG [main] [org.apache.commons.httpclient.methods.GetMethod].<init>(90) | enter GetMethod(String)
+[client]2015-03-20 09:56:45,416 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.authentication.credential-provider = null
+[client]2015-03-20 09:56:45,416 DEBUG [main] [org.apache.commons.httpclient.HttpClient].executeMethod(374) | enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+[client]2015-03-20 09:56:45,417 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(405) | enter HttpConnectionManager.getConnectionWithTimeout(HostConfiguration, long)
+[client]2015-03-20 09:56:45,418 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(412) | HttpConnectionManager.getConnection:  config = HostConfiguration[host=http://leon:8090], timeout = 0
+[client]2015-03-20 09:56:45,419 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:45,419 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:45,419 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getFreeConnection(839) | Getting free connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:45,419 DEBUG [main] [org.apache.commons.httpclient.HttpMethodDirector].executeWithRetry(379) | Attempt number 1 to process request
+[client]2015-03-20 09:56:45,422 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].execute(1079) | enter HttpMethodBase.execute(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,423 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequest(2057) | enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,423 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestLine(2212) | enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,423 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].generateRequestLine(1496) | enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+[client]2015-03-20 09:56:45,423 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,423 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,424 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,424 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestHeaders(2175) | enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:45,424 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addRequestHeaders(1417) | enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,424 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addUserAgentRequestHeader(1442) | enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,424 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1328) | enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,425 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1352) | Adding Host request header
+[client]2015-03-20 09:56:45,425 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addCookieRequestHeader(1266) | enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,425 DEBUG [main] [org.apache.commons.httpclient.HttpState].getCookies(173) | enter HttpState.getCookies()
+[client]2015-03-20 09:56:45,425 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].match(549) | enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+[client]2015-03-20 09:56:45,425 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].match(453) | enter CookieSpecBase.match(String, int, String, boolean, Cookie
+[client]2015-03-20 09:56:45,425 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].formatCookie(250) | enter RFC2109Spec.formatCookie(Cookie)
+[client]2015-03-20 09:56:45,426 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addProxyConnectionHeader(1379) | enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,426 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,426 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,426 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,426 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,426 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,426 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,426 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,427 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,427 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,427 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,427 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,427 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,427 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].writeLine(1001) | enter HttpConnection.writeLine()
+[client]2015-03-20 09:56:45,427 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,427 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,428 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].flushRequestOutputStream(826) | enter HttpConnection.flushRequestOutputStream()
+[client]2015-03-20 09:56:45,428 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponse(1730) | enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,428 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readStatusLine(1964) | enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,428 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].readLine(1113) | enter HttpConnection.readLine()
+[client]2015-03-20 09:56:45,428 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,428 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,431 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseHeaders(1930) | enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:45,432 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:45,432 DEBUG [main] [org.apache.commons.httpclient.HttpParser].parseHeaders(170) | enter HeaderParser.parseHeaders(InputStream, String)
+[client]2015-03-20 09:56:45,432 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,432 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,432 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,432 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,432 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,432 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,433 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,433 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,433 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,433 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,433 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,433 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,433 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,433 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,434 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,434 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,434 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,434 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,434 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processResponseHeaders(1579) | enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,434 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processCookieHeaders(1615) | enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,434 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1781) | enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,435 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1816) | enter HttpMethodBase.readResponseBody(HttpConnection)
+[client]2015-03-20 09:56:45,435 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:45,435 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].canResponseHaveBody(2281) | enter HttpMethodBase.canResponseHaveBody(int)
+[client]2015-03-20 09:56:45,435 DEBUG [main] [org.apache.commons.httpclient.HeaderElement].parseElements(238) | enter HeaderElement.parseElements(String)
+[client]2015-03-20 09:56:45,435 DEBUG [main] [org.apache.commons.httpclient.HeaderElement].parseElements(194) | enter HeaderElement.parseElements(char[])
+[client]2015-03-20 09:56:45,435 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].isResponseAvailable(894) | enter HttpConnection.isResponseAvailable(int)
+[client]2015-03-20 09:56:45,442 DEBUG [main] [org.apache.commons.httpclient.HttpParser].parseHeaders(170) | enter HeaderParser.parseHeaders(InputStream, String)
+[client]2015-03-20 09:56:45,442 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,442 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:45,443 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1024) | Resorting to protocol version default close connection policy
+[client]2015-03-20 09:56:45,443 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1028) | Should NOT close connection, using HTTP/1.1
+[client]2015-03-20 09:56:45,443 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].isResponseAvailable(874) | enter HttpConnection.isResponseAvailable()
+[client]2015-03-20 09:56:45,443 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1174) | enter HttpConnection.releaseConnection()
+[client]2015-03-20 09:56:45,443 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1178) | Releasing connection back to connection manager.
+[client]2015-03-20 09:56:45,443 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].releaseConnection(630) | enter HttpConnectionManager.releaseConnection(HttpConnection)
+[client]2015-03-20 09:56:45,443 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].freeConnection(979) | Freeing connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:45,443 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:45,444 DEBUG [main] [org.apache.commons.httpclient.util.IdleConnectionHandler].add(76) | Adding connection at: 1426863405444
+[client]2015-03-20 09:56:45,444 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].notifyWaitingThread(961) | Notifying no-one, there are no waiting threads
+[client]2015-03-20 09:56:45,444 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(138) | destFile:/var/folders/nh/s4ydhx1s74n3rrc5gfrr2l6w0000gn/T/report_4961443817596380521.pdf
+[client]2015-03-20 09:56:45,476 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(140) | Finaliza escritura de archivo...
+[client]2015-03-20 09:56:45,476 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClientTest].testGetReportAsFile(62) | reportFile:/var/folders/nh/s4ydhx1s74n3rrc5gfrr2l6w0000gn/T/report_4961443817596380521.pdf
+[client]2015-03-20 09:56:45,476 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClientTest].testGetBigReportAsExcelFile(87) | testGetBigReportAsExcelFile
+[client]2015-03-20 09:56:45,477 INFO [main] [com.gkudos.jasperserver.client.JasperserverRestClientTest].testGetBigReportAsExcelFile(94) | com.gkudos.jasperserver.client.Report@606e1dec[
+  url=/aprendozreports/EXT001
+  params={}
+  format=XLS
+  outputFolder=/var/folders/nh/s4ydhx1s74n3rrc5gfrr2l6w0000gn/T
+]
+[client]2015-03-20 09:56:45,478 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(85) | getReportAsFile
+[client]2015-03-20 09:56:45,478 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.authentication.preemptive = false
+[client]2015-03-20 09:56:45,762 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(102) | Obtener Recurso...
+[client]2015-03-20 09:56:45,777 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(119) | Generar Reporte...
+[client]2015-03-20 09:56:45,781 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.authentication.credential-provider = null
+[client]2015-03-20 09:56:45,782 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].clearRequestBody(150) | enter EntityEnclosingMethod.clearRequestBody()
+[client]2015-03-20 09:56:45,782 DEBUG [main] [org.apache.commons.httpclient.HttpClient].executeMethod(374) | enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+[client]2015-03-20 09:56:45,782 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(405) | enter HttpConnectionManager.getConnectionWithTimeout(HostConfiguration, long)
+[client]2015-03-20 09:56:45,783 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(412) | HttpConnectionManager.getConnection:  config = HostConfiguration[host=http://leon:8090], timeout = 0
+[client]2015-03-20 09:56:45,783 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:45,784 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:45,784 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].createConnection(760) | Allocating new connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:45,784 DEBUG [main] [org.apache.commons.httpclient.HttpMethodDirector].executeWithRetry(379) | Attempt number 1 to process request
+[client]2015-03-20 09:56:45,784 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].open(685) | enter HttpConnection.open()
+[client]2015-03-20 09:56:45,785 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].open(692) | Open connection to leon:8090
+[client]2015-03-20 09:56:45,787 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].execute(1079) | enter HttpMethodBase.execute(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,787 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequest(2057) | enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,787 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestLine(2212) | enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,788 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].generateRequestLine(1496) | enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+[client]2015-03-20 09:56:45,788 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,790 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,790 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,790 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestHeaders(2175) | enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:45,790 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].addRequestHeaders(370) | enter EntityEnclosingMethod.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,790 DEBUG [main] [org.apache.commons.httpclient.methods.ExpectContinueMethod].addRequestHeaders(183) | enter ExpectContinueMethod.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,790 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addRequestHeaders(1417) | enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,790 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addUserAgentRequestHeader(1442) | enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,791 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1328) | enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,791 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1352) | Adding Host request header
+[client]2015-03-20 09:56:45,791 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addCookieRequestHeader(1266) | enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,791 DEBUG [main] [org.apache.commons.httpclient.HttpState].getCookies(173) | enter HttpState.getCookies()
+[client]2015-03-20 09:56:45,791 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].match(549) | enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+[client]2015-03-20 09:56:45,792 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addProxyConnectionHeader(1379) | enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,792 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].addContentLengthRequestHeader(401) | enter EntityEnclosingMethod.addContentLengthRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,792 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].getRequestContentLength(325) | enter EntityEnclosingMethod.getRequestContentLength()
+[client]2015-03-20 09:56:45,794 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].hasRequestContent(135) | enter EntityEnclosingMethod.hasRequestContent()
+[client]2015-03-20 09:56:45,794 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addRequestHeader(386) | HttpMethodBase.addRequestHeader(Header)
+[client]2015-03-20 09:56:45,794 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,794 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,794 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,794 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,794 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,795 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,795 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,795 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,795 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,795 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,795 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,796 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,796 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:45,796 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,796 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,796 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].writeLine(1001) | enter HttpConnection.writeLine()
+[client]2015-03-20 09:56:45,796 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:45,797 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:45,797 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].writeRequestBody(469) | enter EntityEnclosingMethod.writeRequestBody(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,801 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].hasRequestContent(135) | enter EntityEnclosingMethod.hasRequestContent()
+[client]2015-03-20 09:56:45,801 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].getRequestContentLength(325) | enter EntityEnclosingMethod.getRequestContentLength()
+[client]2015-03-20 09:56:45,801 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].hasRequestContent(135) | enter EntityEnclosingMethod.hasRequestContent()
+[client]2015-03-20 09:56:45,801 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getRequestOutputStream(840) | enter HttpConnection.getRequestOutputStream()
+[client]2015-03-20 09:56:45,801 DEBUG [main] [org.apache.commons.httpclient.methods.EntityEnclosingMethod].writeRequestBody(508) | Request body sent
+[client]2015-03-20 09:56:45,801 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].flushRequestOutputStream(826) | enter HttpConnection.flushRequestOutputStream()
+[client]2015-03-20 09:56:45,801 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponse(1730) | enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,801 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readStatusLine(1964) | enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:45,802 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].readLine(1113) | enter HttpConnection.readLine()
+[client]2015-03-20 09:56:45,802 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:45,802 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,481 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseHeaders(1930) | enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:47,481 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].parseHeaders(170) | enter HeaderParser.parseHeaders(InputStream, String)
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,482 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,483 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,483 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,483 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,483 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,483 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,483 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,483 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,484 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,484 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,484 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,484 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,484 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,484 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processResponseHeaders(1579) | enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,484 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processCookieHeaders(1615) | enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,484 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].parse(243) | enter CookieSpecBase.parse(String, port, path, boolean, String)
+[client]2015-03-20 09:56:47,485 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].parse(113) | enter CookieSpecBase.parse(String, port, path, boolean, Header)
+[client]2015-03-20 09:56:47,485 DEBUG [main] [org.apache.commons.httpclient.HeaderElement].parseElements(194) | enter HeaderElement.parseElements(char[])
+[client]2015-03-20 09:56:47,485 DEBUG [main] [org.apache.commons.httpclient.Cookie].<init>(107) | enter Cookie(String, String, String, String, Date, boolean)
+[client]2015-03-20 09:56:47,485 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].validate(137) | enter RFC2109Spec.validate(String, int, String, boolean, Cookie)
+[client]2015-03-20 09:56:47,485 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].validate(369) | enter CookieSpecBase.validate(String, port, path, boolean, Cookie)
+[client]2015-03-20 09:56:47,485 DEBUG [main] [org.apache.commons.httpclient.HttpState].addCookie(125) | enter HttpState.addCookie(Cookie)
+[client]2015-03-20 09:56:47,485 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].formatCookie(250) | enter RFC2109Spec.formatCookie(Cookie)
+[client]2015-03-20 09:56:47,486 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processCookieHeaders(1651) | Cookie accepted: "$Version=0; JSESSIONID=452351D4C7E5E59E51315A802569C868; $Path=/jasperserver"
+[client]2015-03-20 09:56:47,486 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1781) | enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,486 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1816) | enter HttpMethodBase.readResponseBody(HttpConnection)
+[client]2015-03-20 09:56:47,486 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:47,486 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].canResponseHaveBody(2281) | enter HttpMethodBase.canResponseHaveBody(int)
+[client]2015-03-20 09:56:47,487 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1024) | Resorting to protocol version default close connection policy
+[client]2015-03-20 09:56:47,487 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1028) | Should NOT close connection, using HTTP/1.1
+[client]2015-03-20 09:56:47,487 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].isResponseAvailable(874) | enter HttpConnection.isResponseAvailable()
+[client]2015-03-20 09:56:47,487 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1174) | enter HttpConnection.releaseConnection()
+[client]2015-03-20 09:56:47,487 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1178) | Releasing connection back to connection manager.
+[client]2015-03-20 09:56:47,488 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].releaseConnection(630) | enter HttpConnectionManager.releaseConnection(HttpConnection)
+[client]2015-03-20 09:56:47,488 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].freeConnection(979) | Freeing connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:47,488 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:47,488 DEBUG [main] [org.apache.commons.httpclient.util.IdleConnectionHandler].add(76) | Adding connection at: 1426863407488
+[client]2015-03-20 09:56:47,488 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].notifyWaitingThread(961) | Notifying no-one, there are no waiting threads
+[client]2015-03-20 09:56:47,488 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(127) | Obtener archivo...
+[client]2015-03-20 09:56:47,488 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].parseReport(167) | reportResponse:
+<report>
+	<uuid>3901cb2b-70fa-461e-8f0f-f3d4c595847c</uuid>
+	<originalUri>/aprendozreports/EXT001</originalUri>
+	<totalPages>14</totalPages>
+	<startPage>1</startPage>
+	<endPage>14</endPage>
+	<file type="application/xls"><![CDATA[report]]></file>
+</report>
+[client]2015-03-20 09:56:47,491 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(133) | Inicia escritura de archivo...
+[client]2015-03-20 09:56:47,492 DEBUG [main] [org.apache.commons.httpclient.methods.GetMethod].<init>(90) | enter GetMethod(String)
+[client]2015-03-20 09:56:47,492 DEBUG [main] [org.apache.commons.httpclient.params.DefaultHttpParams].setParameter(151) | Set parameter http.authentication.credential-provider = null
+[client]2015-03-20 09:56:47,492 DEBUG [main] [org.apache.commons.httpclient.HttpClient].executeMethod(374) | enter HttpClient.executeMethod(HostConfiguration,HttpMethod,HttpState)
+[client]2015-03-20 09:56:47,492 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(405) | enter HttpConnectionManager.getConnectionWithTimeout(HostConfiguration, long)
+[client]2015-03-20 09:56:47,492 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getConnectionWithTimeout(412) | HttpConnectionManager.getConnection:  config = HostConfiguration[host=http://leon:8090], timeout = 0
+[client]2015-03-20 09:56:47,493 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:47,493 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:47,493 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getFreeConnection(839) | Getting free connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:47,493 DEBUG [main] [org.apache.commons.httpclient.HttpMethodDirector].executeWithRetry(379) | Attempt number 1 to process request
+[client]2015-03-20 09:56:47,494 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].execute(1079) | enter HttpMethodBase.execute(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,495 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequest(2057) | enter HttpMethodBase.writeRequest(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,495 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestLine(2212) | enter HttpMethodBase.writeRequestLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,495 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].generateRequestLine(1496) | enter HttpMethodBase.generateRequestLine(HttpConnection, String, String, String, String)
+[client]2015-03-20 09:56:47,495 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:47,495 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:47,495 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:47,496 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].writeRequestHeaders(2175) | enter HttpMethodBase.writeRequestHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:47,496 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addRequestHeaders(1417) | enter HttpMethodBase.addRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,496 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addUserAgentRequestHeader(1442) | enter HttpMethodBase.addUserAgentRequestHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,496 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1328) | enter HttpMethodBase.addHostRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,496 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addHostRequestHeader(1352) | Adding Host request header
+[client]2015-03-20 09:56:47,497 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addCookieRequestHeader(1266) | enter HttpMethodBase.addCookieRequestHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,497 DEBUG [main] [org.apache.commons.httpclient.HttpState].getCookies(173) | enter HttpState.getCookies()
+[client]2015-03-20 09:56:47,497 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].match(549) | enter CookieSpecBase.match(String, int, String, boolean, Cookie[])
+[client]2015-03-20 09:56:47,497 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].match(453) | enter CookieSpecBase.match(String, int, String, boolean, Cookie
+[client]2015-03-20 09:56:47,497 DEBUG [main] [org.apache.commons.httpclient.cookie.CookieSpec].formatCookie(250) | enter RFC2109Spec.formatCookie(Cookie)
+[client]2015-03-20 09:56:47,497 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].addProxyConnectionHeader(1379) | enter HttpMethodBase.addProxyConnectionHeader(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,497 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:47,497 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].print(1032) | enter HttpConnection.print(String)
+[client]2015-03-20 09:56:47,498 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].writeLine(1001) | enter HttpConnection.writeLine()
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(942) | enter HttpConnection.write(byte[])
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].write(963) | enter HttpConnection.write(byte[], int, int)
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].flushRequestOutputStream(826) | enter HttpConnection.flushRequestOutputStream()
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponse(1730) | enter HttpMethodBase.readResponse(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readStatusLine(1964) | enter HttpMethodBase.readStatusLine(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].readLine(1113) | enter HttpConnection.readLine()
+[client]2015-03-20 09:56:47,499 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,500 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,503 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseHeaders(1930) | enter HttpMethodBase.readResponseHeaders(HttpState,HttpConnection)
+[client]2015-03-20 09:56:47,503 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:47,503 DEBUG [main] [org.apache.commons.httpclient.HttpParser].parseHeaders(170) | enter HeaderParser.parseHeaders(InputStream, String)
+[client]2015-03-20 09:56:47,503 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,504 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,504 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,504 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,504 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,504 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,505 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,506 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,506 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,506 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,506 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processResponseHeaders(1579) | enter HttpMethodBase.processResponseHeaders(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,506 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].processCookieHeaders(1615) | enter HttpMethodBase.processCookieHeaders(Header[], HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,506 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1781) | enter HttpMethodBase.readResponseBody(HttpState, HttpConnection)
+[client]2015-03-20 09:56:47,506 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].readResponseBody(1816) | enter HttpMethodBase.readResponseBody(HttpConnection)
+[client]2015-03-20 09:56:47,506 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].getResponseInputStream(857) | enter HttpConnection.getResponseInputStream()
+[client]2015-03-20 09:56:47,507 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].canResponseHaveBody(2281) | enter HttpMethodBase.canResponseHaveBody(int)
+[client]2015-03-20 09:56:47,507 DEBUG [main] [org.apache.commons.httpclient.HeaderElement].parseElements(238) | enter HeaderElement.parseElements(String)
+[client]2015-03-20 09:56:47,507 DEBUG [main] [org.apache.commons.httpclient.HeaderElement].parseElements(194) | enter HeaderElement.parseElements(char[])
+[client]2015-03-20 09:56:47,507 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].isResponseAvailable(894) | enter HttpConnection.isResponseAvailable(int)
+[client]2015-03-20 09:56:47,531 DEBUG [main] [org.apache.commons.httpclient.HttpParser].parseHeaders(170) | enter HeaderParser.parseHeaders(InputStream, String)
+[client]2015-03-20 09:56:47,531 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readLine(105) | enter HttpParser.readLine(InputStream, String)
+[client]2015-03-20 09:56:47,532 DEBUG [main] [org.apache.commons.httpclient.HttpParser].readRawLine(74) | enter HttpParser.readRawLine()
+[client]2015-03-20 09:56:47,532 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1024) | Resorting to protocol version default close connection policy
+[client]2015-03-20 09:56:47,532 DEBUG [main] [org.apache.commons.httpclient.HttpMethodBase].shouldCloseConnection(1028) | Should NOT close connection, using HTTP/1.1
+[client]2015-03-20 09:56:47,532 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].isResponseAvailable(874) | enter HttpConnection.isResponseAvailable()
+[client]2015-03-20 09:56:47,533 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1174) | enter HttpConnection.releaseConnection()
+[client]2015-03-20 09:56:47,533 DEBUG [main] [org.apache.commons.httpclient.HttpConnection].releaseConnection(1178) | Releasing connection back to connection manager.
+[client]2015-03-20 09:56:47,533 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].releaseConnection(630) | enter HttpConnectionManager.releaseConnection(HttpConnection)
+[client]2015-03-20 09:56:47,533 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].freeConnection(979) | Freeing connection, hostConfig=HostConfiguration[host=http://leon:8090]
+[client]2015-03-20 09:56:47,533 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].getHostPool(805) | enter HttpConnectionManager.ConnectionPool.getHostPool(HostConfiguration)
+[client]2015-03-20 09:56:47,533 DEBUG [main] [org.apache.commons.httpclient.util.IdleConnectionHandler].add(76) | Adding connection at: 1426863407533
+[client]2015-03-20 09:56:47,533 DEBUG [main] [org.apache.commons.httpclient.MultiThreadedHttpConnectionManager].notifyWaitingThread(961) | Notifying no-one, there are no waiting threads
+[client]2015-03-20 09:56:47,534 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(138) | destFile:/var/folders/nh/s4ydhx1s74n3rrc5gfrr2l6w0000gn/T/report_3740924595835642947.xls
+[client]2015-03-20 09:56:47,535 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClient].getReportAsFile(140) | Finaliza escritura de archivo...
+[client]2015-03-20 09:56:47,535 DEBUG [main] [com.gkudos.jasperserver.client.JasperserverRestClientTest].testGetBigReportAsExcelFile(98) | reportFile:/var/folders/nh/s4ydhx1s74n3rrc5gfrr2l6w0000gn/T/report_3740924595835642947.xls
