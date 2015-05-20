@@ -4,10 +4,10 @@
   <echo>*******************************************************************</echo>
   <echo>*******************************************************************</echo>
   <echo>[project.name] : jasperserver-simple-java-rest-client</echo>
-  <echo>[project.basedir] : /Users/rochester/Desktop/jasperserver-simple-java-rest-client-master</echo>
+  <echo>[project.basedir] : /Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master</echo>
   <echo>[project.version] : 1.0-SNAPSHOT</echo>
   <echo>[project.artifactId] jasperserver-simple-java-rest-client</echo>
-  <echo>[project.build.directory] /Users/rochester/Desktop/jasperserver-simple-java-rest-client-master/target</echo>
+  <echo>[project.build.directory] /Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target</echo>
   <echo>[jdk.source] : 1.6</echo>
   <echo>[jdk.target] : 1.6</echo>
   <echo>[jdk.debug] : true</echo>

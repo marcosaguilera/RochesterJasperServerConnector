@@ -29,6 +29,7 @@ public class Report implements Serializable {
 	public static final String FORMAT_PDF = "PDF";
 	public static final String FORMAT_EXCEL = "XLS";
 	public static final String FORMAT_CSV = "CSV";
+        public static final String FORMAT_DOCX = "DOCX";
 
 	private String url;
 	private Map<String, String> params;
