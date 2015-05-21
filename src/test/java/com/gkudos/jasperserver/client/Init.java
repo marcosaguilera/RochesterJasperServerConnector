@@ -5,9 +5,10 @@
 package com.gkudos.jasperserver.client;
 
 import com.gkudos.jasperserver.client.JasperserverRestClientTest;
+import java.io.File;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  *
@@ -30,7 +31,7 @@ public class Init {
             Class.forName(myDriver);
             conn = DriverManager.getConnection(myUrl, "root", "irc4Quag");
 
-            st = conn.prepareStatement("SELECT Curso.Curso as curso, SY.Id_SY as idsy, SY.School_year as sy, PERSONA.Codigo as codigo FROM SY INNER JOIN Insc_Alum_Curso ON SY.Id_SY = Insc_Alum_Curso.SY_Id_SY INNER JOIN PERSONA ON PERSONA.Id_Persona = Insc_Alum_Curso.Persona_Id_Persona INNER JOIN Curso ON Curso.Id_Curso = Insc_Alum_Curso.Curso_Id_Curso WHERE SY.Id_SY = ? AND curso.Id_Curso >= 10101 AND curso.Id_Curso <= 40403");
+            st = conn.prepareStatement("SELECT Curso.Curso as curso, SY.Id_SY as idsy, SY.School_year as sy, PERSONA.Codigo as codigo FROM SY INNER JOIN Insc_Alum_Curso ON SY.Id_SY = Insc_Alum_Curso.SY_Id_SY INNER JOIN PERSONA ON PERSONA.Id_Persona = Insc_Alum_Curso.Persona_Id_Persona INNER JOIN Curso ON Curso.Id_Curso = Insc_Alum_Curso.Curso_Id_Curso WHERE SY.Id_SY = ? AND curso.Id_Curso >= 10101 AND curso.Id_Curso <= 40403 ORDER BY PERSONA.Apellido1, PERSONA.Apellido2, PERSONA.Nombre1, PERSONA.Nombre2");
             st.setInt(1, sy);
             rs = st.executeQuery();
             
@@ -65,13 +66,10 @@ public class Init {
 
             }catch(SQLException se){   
             }
-            
         }
         return CodeDataList;
     }
-    
-    
-
+   
     /**
      * @param args the command line arguments
      */
@@ -83,22 +81,17 @@ public class Init {
         System.out.println("---> "+size);
         
         JasperserverRestClientTest js = new JasperserverRestClientTest();
-        js.beforeTest();
-        
-        /*for(String codeId : codes ){
-            js.getFinalBook( codeId, 4 );
-            System.out.println(" ====> "+ codeId +" ===> Report completed!");
-        }*/
-        
+        js.FileIO();
+
         String codeId;
-        for(int i=0; i<=10; i++ ){
+        String fileName;
+        for(int i=0; i<size; i++ ){
            codeId = codes.get(i);
            System.out.println("i "+i +"  ===> CODIGO: "+ codes.get(i));
-           js.getFinalBook( codeId, 4 );
+           fileName = i+"_"+codeId+"_";
+           js.getFinalBookPdf( codeId, 4, fileName);
+           //js.getFinalBookDocx(codeId, 4, fileName);
            System.out.println(" ====> "+ codeId +" ===> Report completed!");
         }
-        //js.testGetReportAsFile();
-        //js.testGetBigReportAsExcelFile();
-        //System.out.println("--> initialized java");
     }
 }

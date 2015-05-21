@@ -24,17 +24,17 @@ public class Report implements Serializable {
 	/**
 	 * 
 	 */
-	
-
-	public static final String FORMAT_PDF = "PDF";
+        
+	public static final String FORMAT_PDF   = "PDF";
 	public static final String FORMAT_EXCEL = "XLS";
-	public static final String FORMAT_CSV = "CSV";
-        public static final String FORMAT_DOCX = "DOCX";
+	public static final String FORMAT_CSV   = "CSV";
+        public static final String FORMAT_DOCX  = "DOCX";
 
 	private String url;
 	private Map<String, String> params;
 	private String format;
 	private String outputFolder;
+        private String fileReportName;
 
 	/**
 	 * 
@@ -109,4 +109,17 @@ public class Report implements Serializable {
 		return HashCodeBuilder.reflectionHashCode(this);
 	}
 
+        /**
+        * @return the fileReportName
+        */
+        public String getFileReportName() {
+            return fileReportName;
+        }
+
+        /**
+        * @param fileReportName the fileReportName to set
+        */
+        public void setFileReportName(String fileReportName) {
+            this.fileReportName = fileReportName;
+        }
 }
