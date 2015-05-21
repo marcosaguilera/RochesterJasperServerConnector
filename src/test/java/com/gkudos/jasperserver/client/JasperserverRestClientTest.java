@@ -4,6 +4,10 @@ import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.fail;
 
 import java.io.File;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,25 +33,101 @@ public class JasperserverRestClientTest {
 	private final static String serverPassword = "jasperadmin";
 	
 	private File outPutDir;
+        
+        /*Funcion para crear un nuevo Directorio y nombrarlo con la fecha y hora actual
+         * ej. LIBRO_20150523_120351 == Carpeta creada el 2015-05-23 a las 12:03:51
+         *
+         */
+        
+        @BeforeTest
+        public void FileIO(){
+            
+            Calendar date   = new GregorianCalendar();
+            int day         = date.get(Calendar.DAY_OF_MONTH);
+            int month       = date.get(Calendar.MONTH)+1;
+            int year        = date.get(Calendar.YEAR);
+            int hour        = date.get(Calendar.HOUR_OF_DAY);
+            int mins        = date.get(Calendar.MINUTE);
+            int secs        = date.get(Calendar.SECOND);
+            String dirName  = "LIBRO_FINAL_"+year+month+day+"_"+hour+mins+secs;
+        
+            outPutDir = new File("/Users/rochester/Desktop/"+dirName);
+            if (!outPutDir.exists()) {
+                    if (outPutDir.mkdir()) {
+                            System.out.println("Directorio creado en: "+outPutDir.getAbsolutePath());
+                    } else {
+                            System.out.println("Error creando el directorio!");
+                    }
+            }
+        }
 	
-	@BeforeTest
+	/*@BeforeTest
 	public void beforeTest() {
-		LOGGER.debug("beforeTest...");
+		//LOGGER.debug("beforeTest...");
 		outPutDir = new File(System.getProperty("java.io.tmpdir"));
-                LOGGER.debug("--> File location: "+outPutDir);
+                //LOGGER.debug("--> File location: "+outPutDir);
 		assertNotNull(outPutDir);
-	}
+	}*/
 
 	@AfterTest
 	public void afterTest() {
-		LOGGER.debug("afterTest...");
+		//LOGGER.debug("afterTest...");
 	}
 	
-
-	/**
+        /*Función para generar un reporte por Año escolar y estudiante PDF*/
+        public void getFinalBookPdf(String code, Integer school_year, String fname){
+                //LOGGER.debug("testGetReportAsFile");
+		try {
+			Report report = new Report();
+                        report.setFormat(Report.FORMAT_PDF);
+                        report.setUrl("/aprendozreports/SEC013GDRIVE");
+			report.setOutputFolder(outPutDir.getAbsolutePath());
+                        report.addParameter("codigo", code);
+                        report.addParameter("sy_string", school_year.toString());
+                        
+			//LOGGER.info(report.toString());
+			JasperserverRestClient client = JasperserverRestClient.getInstance(serverUrl, serverUser, serverPassword);
+                        client.getFileName(fname);
+			File reportFile  = client.getReportAsFile(report);
+			assertNotNull(reportFile);
+			//LOGGER.debug("reportFile: "+reportFile.getAbsolutePath());
+                        System.out.println("reportFile: "+reportFile.getAbsolutePath());
+		} catch (Exception e) {
+                        System.out.println("error in: "+code);
+			fail(e.getMessage(), e);
+                        
+		}
+        }
+        
+        /*Función para generar un reporte por Año escolar y estudiante DOCX*/
+        public void getFinalBookDocx(String code, Integer school_year, String fname){
+                //LOGGER.debug("testGetReportAsFile");
+		try {
+			Report report = new Report();
+                        report.setFormat(Report.FORMAT_DOCX);
+                        report.setUrl("/aprendozreports/SEC013GDRIVE");
+			report.setOutputFolder(outPutDir.getAbsolutePath());
+                        report.addParameter("codigo", code);
+                        report.addParameter("sy_string", school_year.toString());
+                        
+			//LOGGER.info(report.toString());
+			JasperserverRestClient client = JasperserverRestClient.getInstance(serverUrl, serverUser, serverPassword);
+                        client.getFileName(fname);
+			File reportFile  = client.getReportAsFile(report);
+			assertNotNull(reportFile);
+			//LOGGER.debug("reportFile: "+reportFile.getAbsolutePath());
+                        System.out.println("reportFile: "+reportFile.getAbsolutePath());
+		} catch (Exception e) {
+                        System.out.println("error in: "+code);
+			fail(e.getMessage(), e);
+                        
+		}
+        }
+        
+        /**
 	 * Ejecuta el reporte y retorna un archivo
 	 **/
-	@Test
+	/*@Test
 	public void testGetReportAsFile() {
 		LOGGER.debug("testGetReportAsFile");
 		try {
@@ -63,8 +143,9 @@ public class JasperserverRestClientTest {
 		} catch (Exception e) {
 			fail(e.getMessage(), e);
 		}
-	}
-	
+	}*/
+        
+       
 	/*@Test
 	public void testGetBigReportAsFile() {
 		LOGGER.debug("testGetBigReportAsFile");
@@ -82,7 +163,7 @@ public class JasperserverRestClientTest {
 		}
 	}*/
 	
-	@Test
+	/*@Test
 	public void testGetBigReportAsExcelFile() {
 		LOGGER.debug("testGetBigReportAsExcelFile");
 		try {
@@ -99,7 +180,7 @@ public class JasperserverRestClientTest {
 		} catch (Exception e) {
 			fail(e.getMessage(), e);
 		}
-	}
+	}*/
 	
 	/*@Test
 	public void testGetReportWithParamsAsFile() {

@@ -32,9 +32,9 @@ import com.sun.jersey.client.apache.config.DefaultApacheHttpClientConfig;
  * 
  */
 public final class JasperserverRestClient {
+        String fileName;
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(JasperserverRestClient.class);
-
 	private static JasperserverRestClient instance;
 	private ClientConfig clientConfig;
 	private String user;
@@ -81,9 +81,10 @@ public final class JasperserverRestClient {
 	 * @return
 	 * @throws Exception
 	 */
-	public File getReportAsFile(Report reporte) throws Exception {
+	 public File getReportAsFile(Report reporte) throws Exception {
 		LOGGER.debug("getReportAsFile");
-
+                Report fname = new Report();
+                
 		// "automagically" manages cookies
 		ApacheHttpClient client = ApacheHttpClient.create(clientConfig);
 		// Client client = Client.create(clientConfig);
@@ -133,7 +134,10 @@ public final class JasperserverRestClient {
 			LOGGER.debug("Inicia escritura de archivo...");
 			File remoteFile = resource.get(File.class);
 			File parentDir = new File(reporte.getOutputFolder());
-			destFile = File.createTempFile("report_", "." + getExtension(reporte.getFormat()), parentDir);
+                        
+                        //fname.getFileReportName allow to get the custom report name ej. 1_15023.pdf
+                        //Check Init.java where is setting the name, and Report.java has the getter
+                        destFile = File.createTempFile(fileName, "." + getExtension(reporte.getFormat()), parentDir);
 			// LOGGER.debug("remoteFile:" + remoteFile.getAbsolutePath());
 			LOGGER.debug("destFile:" + destFile.getAbsolutePath());
 			FileUtils.copyFile(remoteFile, destFile);
@@ -226,7 +230,7 @@ public final class JasperserverRestClient {
 	}
 	
 	/**
-	 * 
+	 *
 	 * @param format
 	 * @return
 	 */
@@ -236,8 +240,14 @@ public final class JasperserverRestClient {
 			ext = "pdf";
 		} else if (format.equals(Report.FORMAT_EXCEL)) {
 			ext = "xls";
-		}
+		} else if (format.equals(Report.FORMAT_DOCX)){
+                        ext = "docx";
+                }
 		return ext;
 	}
-
+        
+        public String getFileName(String name){
+            fileName = name;
+            return fileName;
+        }
 }
