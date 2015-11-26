@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="2.824" errors="0" skipped="0" tests="1" name="TestSuite">
+<testsuite failures="0" time="0.778" errors="0" skipped="0" tests="0" name="TestSuite">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
@@ -22,7 +22,7 @@
     <property name="basedir" value="/Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target/surefire/surefirebooter837034774898360812.jar"/>
+    <property name="surefire.real.class.path" value="/Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target/surefire/surefirebooter125938854880002036.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/nh/s4ydhx1s74n3rrc5gfrr2l6w0000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target/surefire/surefirebooter837034774898360812.jar /Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target/surefire/surefire3683308742333129217tmp /Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target/surefire/surefire5642754119878164033tmp"/>
+    <property name="sun.java.command" value="/Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target/surefire/surefirebooter125938854880002036.jar /Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target/surefire/surefire6659029673472224264tmp /Users/rochester/SOFTWARE/jasperserver-simple-java-rest-client-master/target/surefire/surefire5541665387190292698tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -65,5 +65,4 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="2.176" classname="com.gkudos.jasperserver.client.JasperserverRestClientTest" name="testGetReportAsFile"/>
 </testsuite>
