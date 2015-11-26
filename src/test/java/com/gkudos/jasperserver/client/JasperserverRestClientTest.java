@@ -4,10 +4,12 @@ import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.fail;
 
 import java.io.File;
+import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
+import java.util.logging.Level;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,14 +35,13 @@ public class JasperserverRestClientTest {
 	private final static String serverPassword = "jasperadmin";
 	
 	private File outPutDir;
+        Init init =  new Init();
         
-        /*Funcion para crear un nuevo Directorio y nombrarlo con la fecha y hora actual
-         * ej. LIBRO_20150523_120351 == Carpeta creada el 2015-05-23 a las 12:03:51
-         *
-         */
-        
+       /*Funcion para crear un nuevo Directorio y nombrarlo con la fecha y hora actual
+        **ej. LIBRO_20150523_120351 == Carpeta creada el 2015-05-23 a las 12:03:51
+        ***/
         @BeforeTest
-        public void FileIO(){
+        public void FileIO(String sufix){
             
             Calendar date   = new GregorianCalendar();
             int day         = date.get(Calendar.DAY_OF_MONTH);
@@ -49,7 +50,7 @@ public class JasperserverRestClientTest {
             int hour        = date.get(Calendar.HOUR_OF_DAY);
             int mins        = date.get(Calendar.MINUTE);
             int secs        = date.get(Calendar.SECOND);
-            String dirName  = "LIBRO_FINAL_"+year+month+day+"_"+hour+mins+secs;
+            String dirName  = sufix+year+month+day+"_"+hour+mins+secs;
         
             outPutDir = new File("/Users/rochester/Desktop/"+dirName);
             if (!outPutDir.exists()) {
@@ -77,6 +78,8 @@ public class JasperserverRestClientTest {
         /*Función para generar un reporte por Año escolar y estudiante PDF*/
         public void getFinalBookPdf(String code, Integer school_year, String fname){
                 //LOGGER.debug("testGetReportAsFile");
+                
+                
 		try {
 			Report report = new Report();
                         report.setFormat(Report.FORMAT_PDF);
@@ -93,6 +96,11 @@ public class JasperserverRestClientTest {
 			//LOGGER.debug("reportFile: "+reportFile.getAbsolutePath());
                         System.out.println("reportFile: "+reportFile.getAbsolutePath());
 		} catch (Exception e) {
+                        try {
+                            init.setLogReports(code, school_year, fname);
+                        } catch (SQLException ex) {
+                            java.util.logging.Logger.getLogger(JasperserverRestClientTest.class.getName()).log(Level.SEVERE, null, ex);
+                        }
                         System.out.println("error in: "+code);
 			fail(e.getMessage(), e);
                         
@@ -100,15 +108,15 @@ public class JasperserverRestClientTest {
         }
         
         /*Función para generar un reporte por Año escolar y estudiante DOCX*/
-        public void getFinalBookDocx(String code, Integer school_year, String fname){
+        public void getFinalGradeCert(String code, Integer school_year, String fname){
                 //LOGGER.debug("testGetReportAsFile");
 		try {
 			Report report = new Report();
-                        report.setFormat(Report.FORMAT_DOCX);
-                        report.setUrl("/aprendozreports/SEC013GDRIVE");
+                        report.setFormat(Report.FORMAT_PDF);
+                        report.setUrl("/aprendozreports/SEC014GDRIVE");
 			report.setOutputFolder(outPutDir.getAbsolutePath());
                         report.addParameter("codigo", code);
-                        report.addParameter("sy_string", school_year.toString());
+                        report.addParameter("string_sy", school_year.toString());
                         
 			//LOGGER.info(report.toString());
 			JasperserverRestClient client = JasperserverRestClient.getInstance(serverUrl, serverUser, serverPassword);
@@ -118,9 +126,13 @@ public class JasperserverRestClientTest {
 			//LOGGER.debug("reportFile: "+reportFile.getAbsolutePath());
                         System.out.println("reportFile: "+reportFile.getAbsolutePath());
 		} catch (Exception e) {
+                    try {
+                        init.setLogReports(code, school_year, fname);
+                    } catch (SQLException ex) {
+                        java.util.logging.Logger.getLogger(JasperserverRestClientTest.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                         System.out.println("error in: "+code);
 			fail(e.getMessage(), e);
-                        
 		}
         }
         

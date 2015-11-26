@@ -1,16 +1,14 @@
 <testng-results>
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="2195" started-at="2015-05-20T13:07:05Z" finished-at="2015-05-20T13:07:07Z">
+  <suite name="Command line suite" duration-ms="6" started-at="2015-05-27T11:00:35Z" finished-at="2015-05-27T11:00:35Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="2195" started-at="2015-05-20T13:07:05Z" finished-at="2015-05-20T13:07:07Z">
+    <test name="Command line test" duration-ms="6" started-at="2015-05-27T11:00:35Z" finished-at="2015-05-27T11:00:35Z">
       <class name="com.gkudos.jasperserver.client.JasperserverRestClientTest">
-        <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="12" started-at="2015-05-20T13:07:05Z" finished-at="2015-05-20T13:07:05Z">
+        <test-method status="PASS" signature="FileIO()" name="FileIO" is-config="true" duration-ms="4" started-at="2015-05-27T11:00:35Z" finished-at="2015-05-27T11:00:35Z">
         </test-method>
-        <test-method status="PASS" signature="testGetReportAsFile()" name="testGetReportAsFile" duration-ms="2176" started-at="2015-05-20T13:07:05Z" finished-at="2015-05-20T13:07:07Z">
-        </test-method>
-        <test-method status="PASS" signature="afterTest()" name="afterTest" is-config="true" duration-ms="0" started-at="2015-05-20T13:07:07Z" finished-at="2015-05-20T13:07:07Z">
+        <test-method status="PASS" signature="afterTest()" name="afterTest" is-config="true" duration-ms="0" started-at="2015-05-27T11:00:35Z" finished-at="2015-05-27T11:00:35Z">
         </test-method>
       </class>
     </test>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Command line test" failures="0" tests="1" time="2.195" errors="0">
+<testsuite name="Command line test" failures="0" tests="0" time="0.0060" errors="0">
   <properties/>
-  <testcase name="testGetReportAsFile" time="2.176" classname="com.gkudos.jasperserver.client.JasperserverRestClientTest"/>
 </testsuite>
